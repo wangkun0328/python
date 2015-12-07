@@ -39,5 +39,13 @@ def play():
     else:
         print "did'not update"
 
+def get_md5(path):
+    m = md5()
+    a_file = open(path,'rb')
+    m.update(a_file.read())
+    a_file.close()
+    return m.hexdigest()
+
+
 if __name__=='__main__':
     play()
