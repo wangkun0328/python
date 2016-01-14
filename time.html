@@ -1,0 +1,15 @@
+<body onload='timestart()'>
+
+<p id='txt'>
+</p>
+
+<script type="text/javascript">
+    var t    
+    function timestart()
+    {
+    document.getElementById('txt').innerHTML=Date()
+    t=setTimeout("timestart()",1000)
+    }
+
+</script>
+</body>
